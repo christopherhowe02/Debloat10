@@ -270,6 +270,11 @@ Set-Content -Path $env:TEMP\Restore_Windows_Photo_Viewer_ALL_USERS.reg -Value 'W
 ".tiff"="PhotoViewer.FileAssoc.Tiff"
 '
 
+Set-Content -Path $env:TEMP\DisableLockScreen.reg -Value 'Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001'
+
 Function Create-Menu (){
     $MenuOptions = @("Remove Bloatware Apps","Remove Xbox","Remove Store","Restore Classic Photo Viewer","Disable Telemetry","Disable Cortana","Install Security Only Updates","Remove OneDrive","Enable Dark Mode","Enable F8 Safe Mode Menu","Disable Lock Screen Image","Disable UAC Prompt","Remove Bing From Start Menu Search","Install .Net Framework 3.5","Disable Windows Defender","Exit")
     $MaxValue = 15
@@ -332,6 +337,10 @@ While($True){
 	if($menu -eq 0){
 		Clear-Host
 		Write-Host("Removeing Bloatware Apps")
+        $Holo = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Holographic"    
+        If (Test-Path $Holo) {
+		Set-ItemProperty $Holo  FirstRunSucceeded -Value 0 
+		}
 		$Bloatware = @(
 
 		#Unnecessary Windows 10 AppX Apps
@@ -346,10 +355,14 @@ While($True){
 			"Microsoft.Getstarted"
 			"Microsoft.Messaging"
 			"Microsoft.Microsoft3DViewer"
+			"Microsoft.MicrosoftOfficeHub"
+			"Microsoft.ScreenSketch"
 			"Microsoft.MicrosoftSolitaireCollection"
+			"Microsoft.MixedReality.Portal"
 			"Microsoft.NetworkSpeedTest"
 			"Microsoft.News"
 			"Microsoft.Office.Lens"
+			"Microsoft.Office.OneNote"
 			"Microsoft.Office.Sway"
 			"Microsoft.OneConnect"
 			"Microsoft.People"
@@ -418,11 +431,6 @@ While($True){
         Set-ItemProperty $registryOEM PreInstalledAppsEverEnabled -Value 0 
         Set-ItemProperty $registryOEM SilentInstalledAppsEnabled -Value 0 
         Set-ItemProperty $registryOEM SystemPaneSuggestionsEnabled -Value 0
-		Write-Host "Setting Mixed Reality Portal value to 0 so that you can uninstall it in Settings"
-        $Holo = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Holographic"    
-        If (Test-Path $Holo) {
-		Set-ItemProperty $Holo  FirstRunSucceeded -Value 0 
-		}
 		Clear-Host
 	}elseif($menu -eq 1){
 		Clear-Host
@@ -765,7 +773,7 @@ While($True){
 	}elseif($menu -eq 10){
 		Clear-Host
 		Write-Host("Disabling Lock Screen Image")
-		Set-ItemProperty -Path "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization" -Name "NoLockScreen" -Type DWord -Value 1
+		regedit /s $env:TEMP\DisableLockScreen.reg
 		Clear-Host
 	}elseif($menu -eq 11){
 		Clear-Host
@@ -816,6 +824,6 @@ While($True){
 		Clear-Host
 	}elseif($menu -eq 15){
 		Clear-Host
-		break
+		exit
 	}
 }
