@@ -372,10 +372,11 @@ While($True){
 			"Microsoft.Wallet"
 			"Microsoft.Whiteboard"
 			"Microsoft.WindowsAlarms"
-			"microsoft.windowscommunicationsapps"
+			"Microsoft.windowscommunicationsapps"
 			"Microsoft.WindowsFeedbackHub"
 			"Microsoft.WindowsMaps"
 			"Microsoft.WindowsSoundRecorder"
+			"Microsoft.YourPhone"
 			"Microsoft.ZuneMusic"
 			"Microsoft.ZuneVideo"
 
