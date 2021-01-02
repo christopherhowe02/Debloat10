@@ -1,4 +1,7 @@
-#Menu: https://community.spiceworks.com/scripts/show/4656-powershell-create-menu-easily-add-arrow-key-driven-menu-to-scripts
+#Console menu: https://community.spiceworks.com/scripts/show/4656-powershell-create-menu-easily-add-arrow-key-driven-menu-to-scripts
+#Debloat script based on:
+# -Sycnex Windows Debloater https://github.com/Sycnex/Windows10Debloater
+# -ChrisTitusTech win10script https://github.com/ChrisTitusTech/win10script
 
 # Self-elevate the script if required
 if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
