@@ -40,9 +40,11 @@ Enables Dark Mode
 
 ## Enable F8 Safe Mode Menu
 Restores the F8 Advanced Boot Options menu found in Windows 7 and below
+![Debloat10 Window](https://debloat10.netlify.app/AdvancedBootOptions.png)
 
 ## Disable Lock Screen Image
 Disables the image that overlays the login screen
+![Debloat10 Window](https://debloat10.netlify.app/LockScreenImage.png)
 
 ## Disable UAC Prompt
 Disables the user account control box when running aplications as administrator
