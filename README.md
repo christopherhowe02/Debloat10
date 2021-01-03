@@ -57,3 +57,8 @@ Installs .Net framework 3.5
 
 ## Disable Windows Defender
 Disables Windows Defender
+
+# Credit
+* [JDDellGuy](https://community.spiceworks.com/people/josiahdeal3479) - [PowerShell Console Menu](https://community.spiceworks.com/scripts/show/4656-powershell-create-menu-easily-add-arrow-key-driven-menu-to-scripts)
+* [ChrisTitusTech](https://github.com/ChrisTitusTech) - [win10script](https://github.com/ChrisTitusTech/win10script)
+* [Sycnex](https://github.com/Sycnex) - [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
