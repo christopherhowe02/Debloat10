@@ -15,27 +15,45 @@ Removes all apps preinstalled by the windows store and the following app preinst
 3DBuilder, AppConnector, BingFinance, BingNews, BingSports, BingTranslator, BingWeather, GetHelp, Getstarted, Messaging, Microsoft3DViewer, MicrosoftOfficeHub, MicrosoftSolitaireCollection, MixedRealityPortal, NetworkSpeedTest, News, OfficeLens, OfficeOneNote, OfficeSway, OneConnect, People, Print3D, ScreenSketch, SkypeApp, StorePurchaseApp, Wallet, Whiteboard, WindowsAlarms, WindowsCommunicationsApps, WindowsFeedbackHub, WindowsMaps, WindowsSoundRecorder, YourPhone, ZuneMusic, ZuneVideo
 
 ### Remove Xbox
+Removes XboxTCUI, XboxApp XboxGameOverlay, XboxIdentityProvider, XboxSpeechToTextOverlay
+
+### Remove Store
+Removes WindowsStore
 
 ### Restore Classic Photo Viewer
+Removes WindowsPhotos and restores the classic photo viewer from Windows 7/8
 
 ### Disable Telemetry
+Disables all telemetry options in the registry, disables unnessassery Windows services and runs the recomended settings for O&0 Shutup10
 
 ### Disable Cortana
+Disables Cortana Assistant
 
 ### Install Security Only Updates
+Delays feature updates by 3 years and disables auto restart to complete updates
 
 ### Remove OneDrive
+Removes Microsoft OneDrive
 
 ### Enable Dark Mode
+Enables Dark Mode
 
 ### Enable F8 Safe Mode Menu
+Restores the F8 Advanced Boot Options menu found in Windows 7 and below
+![Advanced Boot Options](https://debloat10.netlify.app/AdvancedBootOptions.png)
 
 ### Disable Lock Screen Image
+Disables the image that overlays the login screen
+![Lock Screen Image](https://debloat10.netlify.app/LockScreenImage.png)
 
 ### Disable UAC Prompt
+Disables the user account control box when running aplications as administrator
 
 ### Remove Bing From Start Menu Search
+Removes bing search results from start menu
 
 ### Install .Net Framework 3.5
+Installs .Net framework 3.5
 
 ### Disable Windows Defender
+Disables Windows Defender
