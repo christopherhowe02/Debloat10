@@ -11,6 +11,7 @@ Yet another Windows 10 debloat script
 # About
 ### Remove Bloatware Apps
 Removes all apps preinstalled by the windows store and the following app preinstalled my Microsoft:
+
 3DBuilder, AppConnector, BingFinance, BingNews, BingSports, BingTranslator, BingWeather, GetHelp, Getstarted, Messaging, Microsoft3DViewer, MicrosoftOfficeHub, MicrosoftSolitaireCollection, MixedRealityPortal, NetworkSpeedTest, News, OfficeLens, OfficeOneNote, OfficeSway, OneConnect, People, Print3D, ScreenSketch, SkypeApp, StorePurchaseApp, Wallet, Whiteboard, WindowsAlarms, WindowsCommunicationsApps, WindowsFeedbackHub, WindowsMaps, WindowsSoundRecorder, YourPhone, ZuneMusic, ZuneVideo
 
 ### Remove Xbox
