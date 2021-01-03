@@ -1,5 +1,5 @@
 # Debloat10
-Windows 10 debloat tool
+Yet another script to debloat Windows 10
 
 ![Debloat10 Window](https://debloat10.netlify.app/Debloat10.png)
 
