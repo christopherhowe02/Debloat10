@@ -53,7 +53,7 @@ Disables the user account control box when running aplications as administrator
 Removes bing search results from start menu
 
 ## Install .Net Framework 3.5
-Installs .Net framework 3.5
+Installs .Net Framework 3.5
 
 ## Disable Windows Defender
 Disables Windows Defender
