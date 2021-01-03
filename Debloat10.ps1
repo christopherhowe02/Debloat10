@@ -662,7 +662,6 @@ While($True){
 	}elseif($menu -eq 4){
 		Clear-Host
 		Write-Host("Disabling Telemetry")
-		#Start-BitsTransfer -Source "https://raw.githubusercontent.com/christopherhowe02/Debloat10/main/ooshutup10.cfg" -Destination $env:TEMP\ooshutup10.cfg
 		Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination $env:TEMP\OOSU10.exe
 		cd $env:TEMP
 		.\OOSU10.exe ooshutup10.cfg /quiet
