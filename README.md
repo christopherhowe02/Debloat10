@@ -2,7 +2,9 @@
 Yet another Windows 10 debloat script
 
 # How To Run
-Run the following command in PoweShell as administrator `iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JL5XA'))`
+Run the following command in PoweShell as administrator
+
+`iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JL5XA'))`
 
 ![Debloat10 Window](https://debloat10.netlify.app/Debloat10.png)
 
